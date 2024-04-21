@@ -8,12 +8,12 @@
 public class Ejercicio1{
    
     public boolean puedoSalir(int n, String [][] maze){     
-        return buscar(0, 0, maze);
+        return puedoSalir(0, 0, maze);
     } 
 
 
 
-    private boolean buscar(int x, int y, String [][]maze){
+    private boolean puedoSalir(int x, int y, String [][]maze){
         boolean res;
         if(valida(x, y, maze)){
             if(maze[x][y] == "E"){
