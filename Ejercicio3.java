@@ -67,7 +67,7 @@ public class Ejercicio3{
         return res;
     }
 
-    public boolean valida(int x, int y, String [][]maze){
+    private boolean valida(int x, int y, String [][]maze){
     
         return x >= 0 && x < maze.length && y >= 0 && y < maze[0].length;
     }
