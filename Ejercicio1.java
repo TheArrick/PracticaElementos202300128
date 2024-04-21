@@ -20,13 +20,13 @@ public class Ejercicio1{
                 res = true;
             }else if(maze[x][y] == "*" || maze[x][y]== "S"){
                 maze[x][y] = "H";
-                res = buscar(x-1, y, maze);
+                res = puedoSalir(x-1, y, maze);
                 if(!res){
-                    res = buscar(x, y+1,maze);
+                    res = puedoSalir(x, y+1,maze);
                     if(!res){
-                        res = buscar(x+1, y, maze);
+                        res = puedoSalir(x+1, y, maze);
                         if(!res){
-                            res = buscar(x, y-1, maze);
+                            res = puedoSalir(x, y-1, maze);
                         }
                     }
                 }
